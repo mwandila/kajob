@@ -1,0 +1,15 @@
+<?php
+/** Category-first homepage demo. */
+get_header();
+$jobs_url = kajob_get_jobs_page_url();
+$stats    = kajob_get_board_stats();
+$cards    = kajob_get_job_cards( array( 'orderby' => 'date', 'order' => 'DESC', 'no_found_rows' => true ), array( 'per_page' => 4 ) );
+?>
+<section class="home-categories hero"><div class="container">
+	<div class="home-categories__heading"><div><span class="home-demo-eyebrow"><i></i><?php esc_html_e( 'Your next chapter starts here', 'kajob' ); ?></span><h1><?php esc_html_e( 'A world of work, waiting for you.', 'kajob' ); ?></h1><p><?php esc_html_e( 'Find the field that fits. Meet teams that get you. Make a move that feels right.', 'kajob' ); ?></p></div><div class="home-categories__visual"><img src="<?php echo esc_url( KAJOB_URI . '/assets/images/home-demo/career-scene.svg' ); ?>" alt="" width="1200" height="800" loading="eager" decoding="async"><div><strong><?php echo esc_html( number_format_i18n( (int) $stats['jobs'] ) ); ?></strong><span><?php esc_html_e( 'open opportunities', 'kajob' ); ?></span></div></div></div>
+	<div class="home-categories__search"><form method="get" action="<?php echo esc_url( $jobs_url ); ?>"><label class="screen-reader-text" for="category-search"><?php esc_html_e( 'Search by title or skill', 'kajob' ); ?></label><?php kajob_icon( 'search', array( 'size' => 19 ) ); ?><input id="category-search" name="search_keywords" placeholder="<?php esc_attr_e( 'Search by title, skill or company', 'kajob' ); ?>"><button class="btn btn--primary" type="submit"><?php esc_html_e( 'Search jobs', 'kajob' ); ?></button></form></div>
+	<div class="home-categories__grid" id="home-categories"><?php kajob_render_job_categories(); ?></div>
+</div></section>
+<section class="section"><div class="container"><div class="section__head"><div><span class="section__eyebrow"><?php esc_html_e( 'Handpicked for you', 'kajob' ); ?></span><h2 class="section__title"><?php esc_html_e( 'Opportunities worth a closer look.', 'kajob' ); ?></h2><p class="section__sub"><?php esc_html_e( 'Fresh openings across the fields people are moving into now.', 'kajob' ); ?></p></div><a class="section__link" href="<?php echo esc_url( $jobs_url ); ?>"><?php esc_html_e( 'Explore all jobs', 'kajob' ); ?> <?php kajob_icon( 'arrow-right', array( 'size' => 16 ) ); ?></a></div><?php if ( ! empty( $cards['html'] ) ) : ?><div class="job-list"><?php echo $cards['html']; // phpcs:ignore WordPress.Security.EscapeOutput ?></div><?php else : ?><div class="home-demo-empty"><h3><?php esc_html_e( 'The right field is out there.', 'kajob' ); ?></h3><p><?php esc_html_e( 'Browse categories above and check back as new teams post roles.', 'kajob' ); ?></p></div><?php endif; ?></div></section>
+<section class="home-category-callout"><div class="container"><div><span><?php esc_html_e( 'A role with your name on it', 'kajob' ); ?></span><h2><?php esc_html_e( 'Find your people. Do your best work.', 'kajob' ); ?></h2></div><a class="btn btn--primary" href="<?php echo esc_url( $jobs_url ); ?>"><?php esc_html_e( 'Start exploring', 'kajob' ); ?> <?php kajob_icon( 'arrow-right', array( 'size' => 16 ) ); ?></a></div></section>
+<?php get_footer(); ?>

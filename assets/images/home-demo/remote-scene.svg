@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Remote work illustration</title>
+  <desc id="desc">A calm home office with a wide window, laptop, books, and a leafy plant.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#b6d3c5"/><stop offset="1" stop-color="#548777"/></linearGradient>
+    <linearGradient id="window" x2="0" y2="1"><stop stop-color="#f3d39f"/><stop offset="1" stop-color="#e89a6b"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="922" cy="165" r="82" fill="#fff0c8" opacity=".9"/>
+  <rect x="146" y="72" width="636" height="420" rx="28" fill="#f6e7d0"/>
+  <rect x="177" y="103" width="574" height="358" rx="16" fill="url(#window)"/>
+  <path d="M177 352c99-112 194-123 290-27 87-82 181-83 284 9v127H177z" fill="#b6b887"/>
+  <path d="M177 400c113-64 206-52 290 10 93-59 191-49 284 18v33H177z" fill="#6d9d7d"/>
+  <path d="M456 103v358m295-180H177" fill="none" stroke="#f6e7d0" stroke-width="22"/>
+  <rect x="112" y="594" width="925" height="40" rx="20" fill="#f2ddbf"/>
+  <path d="M183 634h43l-24 143h-42zm742 0h43l24 143h-42z" fill="#765247"/>
+  <rect x="388" y="430" width="350" height="164" rx="18" fill="#233e43"/>
+  <rect x="414" y="453" width="298" height="110" rx="9" fill="#9ec4b2"/>
+  <path d="M365 594h396l-40 34H405z" fill="#58716a"/>
+  <rect x="270" y="514" width="86" height="80" rx="10" fill="#fff5e4"/>
+  <path d="M290 532h47m-47 18h47m-47 18h33" stroke="#c48b5a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M915 557c-30-70-13-133 24-180 19 62 17 121-24 180m29-7c9-77 49-118 102-133-16 64-49 108-102 133m-45 23c-64-48-123-50-179-18 50 44 111 52 179 18" fill="#3e715d"/>
+  <path d="M847 570h148l-20 76h-108z" fill="#c87650"/>
+</svg>

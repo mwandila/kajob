@@ -1,0 +1,23 @@
+/*
+Theme Name: Kajob
+Author: Kajob
+Description: Kajob is a modern, high-performance job board WordPress theme. Designed for job boards, recruitment agencies and career portals, with full WP Job Manager integration, one-click demo import and deep customization options.
+Version: 2.8.9
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kajob
+Tags: custom-colors, custom-menu, custom-logo, featured-images, full-width-template, threaded-comments, translation-ready, block-styles, wide-blocks
+*/
+
+/*
+ * Copyright (c) 2026 Kajob
+ *
+ * NOTE: This stylesheet exists mainly for the theme header above (required by
+ * WordPress). All production styles live in assets/css/main.css, which is
+ * properly enqueued in functions.php so it can be versioned and minified.
+ * Anything placed here is loaded on the front end only if the stylesheet is
+ * also enqueued — we keep it empty on purpose.
+ */

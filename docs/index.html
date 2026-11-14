@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kajob Theme Documentation</title>
+	<style>
+		:root { color-scheme: light; font: 16px/1.65 system-ui, sans-serif; color: #17202c; background: #f5f7fa; }
+		body { max-width: 860px; margin: 0 auto; padding: 36px 22px 72px; }
+		main { background: #fff; padding: clamp(24px, 5vw, 56px); border-radius: 18px; box-shadow: 0 8px 32px #17202c12; }
+		h1, h2 { line-height: 1.2; } h1 { margin-top: 0; } h2 { margin-top: 2em; }
+		code { background: #f0f2f5; padding: .12em .35em; border-radius: 4px; }
+		.notice { padding: 14px 18px; background: #fff6de; border-left: 4px solid #d99a00; }
+	</style>
+</head>
+<body>
+<main>
+	<h1>Kajob WordPress Theme</h1>
+	<p>Installation and setup guide for Kajob, a job-board theme designed to work with WP Job Manager.</p>
+	<p class="notice"><strong>Requirements:</strong> WordPress 6.4 or newer and PHP 7.4 or newer. Install and activate the Kajob Core companion plugin supplied with the theme release, plus WP Job Manager for job listings, employer dashboards, submissions and applications.</p>
+
+	<h2>Install and activate</h2>
+	<ol>
+		<li>In WordPress, open <strong>Appearance → Themes → Add New → Upload Theme</strong>.</li>
+		<li>Upload the Kajob ZIP, install it, and activate Kajob.</li>
+		<li>Install the separately supplied Kajob Core ZIP from <strong>Plugins → Add New → Upload Plugin</strong>.</li>
+		<li>Install and activate <a href="https://wordpress.org/plugins/wp-job-manager/">WP Job Manager</a> from <strong>Plugins → Add New</strong>.</li>
+		<li>Use the WP Job Manager setup wizard to create the jobs, submit-a-job and job-dashboard pages.</li>
+		<li>Open <strong>Appearance → Customize</strong> to set the site logo, colors, home-page copy and optional AI settings.</li>
+	</ol>
+
+	<h2>Demo content</h2>
+	<p>Open <strong>Appearance → Demo Content</strong> and choose the provided import action. Demo job listings and posts are sample content. Review or remove them before opening the site to applicants.</p>
+
+	<h2>Menus and pages</h2>
+	<p>Assign navigation menus under <strong>Appearance → Menus</strong> or <strong>Appearance → Editor</strong>, depending on the active WordPress menu interface. Kajob creates candidate-account and AI Mode pages when their features are enabled. Job-board pages are managed by WP Job Manager.</p>
+
+	<h2>Applications and email</h2>
+	<p>Email application forms require an open WP Job Manager listing with an email application method and a valid employer email address. Applicants can submit a short bio, cover letter and PDF, DOC or DOCX documents. Each uploaded file is limited to 5 MB; the combined attachment limit is 10 MB. Configure and verify site email delivery (SMTP is recommended) before accepting real applications. External application links continue to be handled by the job listing.</p>
+	<p>For Resend delivery, install the separately supplied optional Kajob Resend Mailer ZIP from <strong>Plugins → Add New → Upload Plugin</strong>, activate it, connect your own Resend account, and verify your sender domain. Configure it under <strong>Settings → Resend Email</strong> and send a test email before accepting applications. Each buyer must supply their own Resend API key.</p>
+
+	<h2>Candidate accounts and privacy</h2>
+	<p>Signed-in candidates can save a CV and cover-letter draft. CVs, cover letters and private application details are encrypted in WordPress user metadata and are not placed in the Media Library. Kajob keeps up to 100 recent application records per account until candidate data is deleted or the site administrator processes an erasure request. Site owners should set a retention period appropriate for their business and local laws.</p>
+	<p>Kajob adds candidate data to WordPress's personal data export and erasure tools under <strong>Tools → Export Personal Data</strong> and <strong>Tools → Erase Personal Data</strong>. Erasure removes Kajob candidate metadata and saved-job IDs for the matching account. It cannot recall application emails already delivered to employers or copies retained by email providers. Candidates can delete their saved CV and cover-letter draft from their account page.</p>
+	<p>Before enabling registrations or applications, publish a privacy policy that explains the data collected, purpose, retention period, contact point and any relevant mail or AI service providers.</p>
+
+	<h2>Optional AI assistant</h2>
+	<p>The AI assistant is disabled until the site owner configures an API key in <strong>Appearance → Customize → AI Assistant</strong>, or defines <code>KAJOB_AI_API_KEY</code> in <code>wp-config.php</code>. The default endpoint is NVIDIA's OpenAI-compatible inference API. The site owner must obtain their own key and comply with the provider's current terms, availability and usage limits.</p>
+	<p>When a visitor uses the assistant, their submitted messages and relevant public listing or blog information may be sent to the configured inference provider. Do not enter sensitive personal information. Tell visitors about this data flow in the site's privacy policy. The theme does not include or pay for an AI API subscription.</p>
+
+	<h2>Fonts, photos and third-party software</h2>
+	<ul>
+		<li>Inter and Space Grotesk are bundled under the SIL Open Font License 1.1. The license texts are in <code>assets/fonts/OFL-Inter.txt</code> and <code>assets/fonts/OFL-Space-Grotesk.txt</code>.</li>
+		<li>Original demo SVG illustrations and authorship details are in <code>assets/images/home-demo/ASSET-CREDITS.md</code>.</li>
+		<li>WP Job Manager and Kajob Core are separate plugins. Install both alongside the theme; Kajob Core is supplied as a separate ZIP with the release.</li>
+		<li>Kajob Resend Mailer is an optional separate plugin. If enabled, email recipient/sender details, subject, message body, and attachments are sent to Resend's API for delivery; disclose this service in the site's privacy policy.</li>
+	</ul>
+
+	<h2>Support and updates</h2>
+	<p>For marketplace customers, use the support channel and update instructions listed on the Kajob item page. Keep WordPress, PHP, Kajob and WP Job Manager up to date. Back up the site before theme updates.</p>
+	<p><em>Theme documentation version 2.8.9.</em></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Career workspace illustration</title>
+  <desc id="desc">A warm, abstract illustration of a desk, a monitor, and a growing plant.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f4c995"/><stop offset="1" stop-color="#dc7552"/></linearGradient>
+    <linearGradient id="screen" x2="0" y2="1"><stop stop-color="#203e47"/><stop offset="1" stop-color="#132a35"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="987" cy="130" r="140" fill="#ffe3b8" opacity=".45"/>
+  <path d="M0 610c186-72 350-70 518-18s321 75 682-40v248H0z" fill="#bc5a47" opacity=".5"/>
+  <path d="M0 694c272-64 447-31 650 12s361 37 550-24v118H0z" fill="#743d3b" opacity=".45"/>
+  <rect x="182" y="130" width="564" height="395" rx="30" fill="#f8e7cf" opacity=".9"/>
+  <rect x="214" y="160" width="500" height="338" rx="18" fill="#d8e7d4"/>
+  <path d="M214 402c93-113 191-120 280-21 66-79 139-82 220-9v126H214z" fill="#90b6a1"/>
+  <path d="M214 452c112-70 219-48 315 13 68-37 125-32 185 2v31H214z" fill="#5d8d7b"/>
+  <rect x="398" y="522" width="136" height="26" rx="13" fill="#8a5542"/>
+  <path d="M430 548h72l28 112H402z" fill="#a7644d"/>
+  <rect x="134" y="650" width="746" height="40" rx="20" fill="#f7e4c5"/>
+  <path d="M208 690h40l-24 90h-40zm582 0h40l24 90h-40z" fill="#814d43"/>
+  <rect x="836" y="525" width="218" height="124" rx="14" fill="#f6dfbc"/>
+  <rect x="866" y="551" width="157" height="9" rx="4" fill="#c77a5a"/>
+  <rect x="866" y="574" width="119" height="9" rx="4" fill="#d4a27a"/>
+  <rect x="866" y="597" width="139" height="9" rx="4" fill="#d4a27a"/>
+  <path d="M1003 512c-23-56-11-101 21-134 15 45 12 91-21 134m23-6c9-64 41-98 86-109-13 52-41 88-86 109m-34 21c-53-39-103-41-149-15 42 36 92 43 149 15" fill="#477764"/>
+  <path d="M961 514h94l-12 49h-70z" fill="#d58b59"/>
+</svg>
